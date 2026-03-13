@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/cesium@1.114.0/Build/Cesium/Cesium.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/cesium@1.114.0/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #cesiumContainer {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #toolbar {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 10;
+            background: rgba(42, 42, 42, 0.8);
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        button {
+            cursor: pointer;
+            display: block;
+            margin-bottom: 5px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="toolbar">
+        <input type="number" id="yearInput" value="1805" style="width: 60px;">
+        <button onclick="loadHistoryYear(document.getElementById('yearInput').value)">Load Year</button>
+        <button onclick="viewer.entities.removeAll()">Clear Map</button>
+    </div>
+    <div id="cesiumContainer"></div>
+    <script src="globe.js"></script>
+</body>
+
+</html>
