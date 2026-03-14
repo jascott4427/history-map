@@ -1,115 +1,202 @@
-import requests
+import asyncio
+import aiohttp
 import json
 import os
-import time
+import random
 import sys
+from urllib.parse import unquote, quote
 
-if not os.path.exists('data'):
-    os.makedirs('data')
+# Directory configuration
+DATA_DIRECTORY = 'data'
+START_YEAR = 2000
+END_YEAR = 2001
 
-def get_wikipedia_summary(wiki_url):
-    if wiki_url == "#" or not wiki_url:
-        return "No description available.", None
-    title = wiki_url.split('/')[-1]
-    api_url = f"https://en.wikipedia.org/api/rest_v1/page/summary/{title}"
-    headers = {'User-Agent': 'HistoricalGlobeBot/1.0'}
-    try:
-        r = requests.get(api_url, headers=headers, timeout=5)
-        if r.status_code == 200:
-            data = r.json()
-            return data.get('extract', 'No summary.'), data.get('thumbnail', {}).get('source', None)
-    except: pass
-    return "No description available.", None
+# Ensure the output directory exists before starting
+if not os.path.exists(DATA_DIRECTORY):
+    os.makedirs(DATA_DIRECTORY)
 
-def fetch_year(year):
-    print(f"\n📅 Scoping Year: {year}")
-    endpoint_url = "https://query.wikidata.org/sparql"
+async def fetch_summary(session, url, event, stats, semaphore):
+    """
+    Fetches the Wikipedia summary and updates the real-time progress line.
+    """
+    async with semaphore:
+        for attempt in range(3):
+            try:
+                await asyncio.sleep(random.uniform(0.05, 0.2))
+                async with session.get(url, timeout=12) as response:
+                    if response.status == 200:
+                        data = await response.json()
+                        event['description'] = data.get('extract', 'No summary available.')
+                        event['imageUrl'] = data.get('thumbnail', {}).get('source', None)
+                        stats['done'] += 1
+                        # Real-time progress update
+                        sys.stdout.write(f"\r    → Progress: {stats['done']} synced | {stats['failed']} failed")
+                        sys.stdout.flush()
+                        return event
+                    elif response.status == 429:
+                        await asyncio.sleep((attempt + 1) * 2)
+                    else:
+                        break
+            except Exception:
+                await asyncio.sleep(0.5)
+        
+        stats['failed'] += 1
+        sys.stdout.write(f"\r    → Progress: {stats['done']} synced | {stats['failed']} failed")
+        sys.stdout.flush()
+        event['description'] = "Summary unavailable (Sync failed)."
+        return event
 
-    # IMPROVED QUERY:
-    # 1. We look for coords on the event OR the event's location (P276/P17)
-    # 2. We bucket types into 6 categories for your JS colors
+async def fetch_wikipedia_summaries(session, events):
+    """
+    Orchestrates asynchronous fetching and manages the progress line end.
+    """
+    stats = {'done': 0, 'failed': 0}
+    semaphore = asyncio.Semaphore(25) 
+    
+    # Filter only events that need a Wiki fetch
+    wiki_events = [e for e in events if e.get('hasWiki')]
+    non_wiki_events = [e for e in events if not e.get('hasWiki')]
+    
+    for e in non_wiki_events:
+        e['description'] = "Historical record (Wikidata)."
+
+    if wiki_events:
+        tasks = []
+        # Inside fetch_wikipedia_summaries
+        for event in wiki_events:
+            # 1. Get the raw title (e.g., "George_W._Bush")
+            raw_title = event['wikiLink'].split('/')[-1]
+            # 2. Decode any existing %20 etc, then re-encode for a URL
+            clean_title = quote(unquote(raw_title))
+            
+            api_url = f"https://en.wikipedia.org/api/rest_v1/page/summary/{clean_title}"
+            tasks.append(fetch_summary(session, api_url, event, stats, semaphore))
+            
+        await asyncio.gather(*tasks)
+    
+    # Print a newline so the next log doesn't overwrite the final progress
+    print() 
+    return events
+
+async def fetch_year(session, year):
+    """
+    Queries Wikidata and processes results with specific console logging.
+    """
+    print(f"--- Scoping Year: {year} ---")
+    sparql_endpoint = "https://query.wikidata.org/sparql"
+    
     query = f"""
-    SELECT DISTINCT ?item ?itemLabel ?eventDate ?coords ?article ?categoryLabel WHERE {{
-      {{ ?item wdt:P585 ?eventDate. }} UNION {{ ?item wdt:P580 ?eventDate. }}
-      
-      # Try to get coords from the item itself, or its location/country
-      OPTIONAL {{ ?item wdt:P625 ?directCoords. }}
-      OPTIONAL {{ ?item wdt:P276/wdt:P625 ?locCoords. }}
-      OPTIONAL {{ ?item wdt:P17/wdt:P625 ?countryCoords. }}
-      BIND(COALESCE(?directCoords, ?locCoords, ?countryCoords) AS ?coords)
-      
-      FILTER(BOUND(?coords))
-      FILTER(?eventDate >= "{year}-01-01T00:00:00Z"^^xsd:dateTime && 
-             ?eventDate <= "{year}-12-31T23:59:59Z"^^xsd:dateTime)
+    SELECT DISTINCT ?item ?itemLabel ?eventDate ?coords ?article ?sitelinks ?categoryLabel WHERE {{
+    # 1. Date and Precision
+    ?item p:P585/psv:P585 [
+        wikibase:timeValue ?eventDate ;
+        wikibase:timePrecision 11
+    ] .
+    
+    FILTER(?eventDate >= "{year}-01-01T00:00:00Z"^^xsd:dateTime && 
+            ?eventDate <= "{year}-12-31T23:59:59Z"^^xsd:dateTime)
 
-      ?article schema:about ?item; schema:isPartOf <https://en.wikipedia.org/>.
-      
-      # CATEGORY BUCKETING
-      OPTIONAL {{ ?item wdt:P31 ?type. }}
-      BIND(
-        IF(?type IN (wd:Q198, wd:Q188055, wd:Q170658, wd:Q80707), "Conflict",
-        IF(?type IN (wd:Q103360, wd:Q274870, wd:Q4022, wd:Q890045), "Politics",
-        IF(?type IN (wd:Q464980, wd:Q16530, wd:Q211386), "Science",
-        IF(?type IN (wd:Q11538, wd:Q80839, wd:Q1656682), "Sports",
-        IF(?type IN (wd:Q12483, wd:Q7150, wd:Q333, wd:Q11660), "Culture", "General")))))
-      AS ?categoryLabel)
+    # 2. Notability Filter (Global History vs. Local News)
+    ?item wikibase:sitelinks ?sitelinks .
+    FILTER(?sitelinks >= 3)
 
-      MINUS {{ ?item wdt:P31 wd:Q5. }} # No Humans
-      SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
-    }} LIMIT 1500
+    # 3. Category Filtering
+    ?item wdt:P31 ?type .
+    ?type (wdt:P279*) ?broadType .
+    VALUES ?broadType {{ 
+        wd:Q198      # War
+        wd:Q188055   # Battle
+        wd:Q124490   # Riot
+        wd:Q7748     # Law
+        wd:Q4022     # Treaty
+        wd:Q27318    # Coup
+        wd:Q1190554  # Incident
+        wd:Q40262    # Election
+    }}
+
+    # 4. Coordinate Fallback
+    OPTIONAL {{ ?item wdt:P625 ?directCoords. }}
+    OPTIONAL {{ ?item wdt:P276/wdt:P625 ?locCoords. }}
+    OPTIONAL {{ ?item wdt:P131/wdt:P625 ?adminCoords. }}
+    OPTIONAL {{ ?item wdt:P17/wdt:P625 ?countryCoords. }}
+    BIND(COALESCE(?directCoords, ?locCoords, ?adminCoords, ?countryCoords) AS ?coords)
+    FILTER(BOUND(?coords))
+
+    # 5. Wikipedia Link
+    ?article schema:about ?item ; 
+            schema:isPartOf <https://en.wikipedia.org/> .
+
+    # 6. Labeling
+    BIND(
+        IF(?broadType = wd:Q198 || ?broadType = wd:Q188055, "Military",
+        IF(?broadType = wd:Q7748 || ?broadType = wd:Q4022 || ?broadType = wd:Q40262, "Political",
+        IF(?broadType = wd:Q124490 || ?broadType = wd:Q27318, "Unrest", "General"))) AS ?categoryLabel
+    )
+
+    SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+    }} 
+    ORDER BY DESC(?sitelinks)
+    LIMIT 500
     """
 
-    headers = {'User-Agent': 'HistoricalGlobeBot/1.0', 'Accept': 'application/sparql-results+json'}
+    headers = {'Accept': 'application/sparql-results+json'}
     
-    try:
-        response = requests.get(endpoint_url, params={'query': query, 'format': 'json'}, headers=headers, timeout=60)
-        data = response.json()['results']['bindings']
+    async with session.get(sparql_endpoint, params={'query': query, 'format': 'json'}, headers=headers) as response:
+        if response.status != 200:
+            print(f"    → Wikidata request failed: {response.status}")
+            return
         
-        results = []
-        seen_titles = set()
-        count = 0
+        data = await response.json(content_type=None)
+        raw_results = data['results']['bindings']
 
-        for res in data:
-            # Debug to stop lots of data entries
-            if count > 100:
-                continue
+    print(f"Found {len(raw_results)} potential entries. Processing coordinates...")
+    
+    events_to_process = []
+    invalid_coords = 0
+    for res in raw_results:
+        try:
+            raw_coords = res['coords']['value'].replace("Point(", "").replace(")", "").split(" ")
+            wiki_link = res.get('article', {}).get('value', None)
             
-            title = res['itemLabel']['value']
-            if title.lower() in seen_titles: continue
-            
-            wiki_link = res.get('article', {}).get('value', '#')
-            summary, img = get_wikipedia_summary(wiki_link)
-            raw_c = res['coords']['value'].replace("Point(", "").replace(")", "").split(" ")
-            
-            results.append({
-                "title": title,
+            events_to_process.append({
+                "title": res['itemLabel']['value'],
                 "category": res.get('categoryLabel', {'value': 'General'})['value'],
                 "date": res['eventDate']['value'].split('T')[0],
-                "description": summary,
-                "imageUrl": img,
-                "wikiLink": wiki_link,
-                "lon": float(raw_c[0]),
-                "lat": float(raw_c[1]),
-                "id": res['item']['value'].split('/')[-1], # Gets the QID (e.g., Q12345)
+                "wikiLink": wiki_link if wiki_link else f"https://www.wikidata.org/wiki/{res['item']['value'].split('/')[-1]}",
+                "hasWiki": True if wiki_link else False,
+                "lon": float(raw_coords[0]),
+                "lat": float(raw_coords[1])
             })
-            seen_titles.add(title.lower())
-            count += 1
-            print(f"\r   📥 Events Saved: {count} | Current: {title[:20]}...", end="")
+        except Exception:
+            invalid_coords += 1
+            continue
 
-        if results:
-            results.sort(key=lambda x: x['date'])
-            with open(f'data/{year}.json', 'w', encoding='utf-8') as f:
-                json.dump(results, f, indent=2)
-            print(f"\n✅ Total unique events for {year}: {len(results)}")
+    print(f"    → Valid coordinates: {len(events_to_process)} | Invalid: {invalid_coords}")
+    print("Syncing summaries from Wikipedia API...")
+    
+    final_results = await fetch_wikipedia_summaries(session, events_to_process)
 
-    except Exception as e:
-        print(f"\n❌ Failed {year}: {e}")
+    file_path = f'{DATA_DIRECTORY}/{year}.json'
+    with open(file_path, 'w', encoding='utf-8') as f:
+        json.dump(final_results, f, indent=2)
+    
+    print(f"Successfully saved {len(final_results)} events to {file_path}")
+
+async def main():
+    headers = {
+        'User-Agent': 'HistoryMapBot/2.0 (contact: jascott@caltech.edu) aiohttp/3.x'
+    }
+    
+    async with aiohttp.ClientSession(headers=headers) as session:
+        for year in range(START_YEAR, END_YEAR + 1):
+            await fetch_year(session, year)
+            
+            wait_time = 3.0
+            print(f"Waiting {wait_time:.1f}s before next year...\n")
+            await asyncio.sleep(wait_time)
 
 if __name__ == "__main__":
     try:
-        for y in range(1900, 1905):
-            fetch_year(y)
-            time.sleep(1)
+        asyncio.run(main())
     except KeyboardInterrupt:
-        print("\n\n🛑 User stopped the process.")
-        sys.exit(0)
+        print("\nScraper stopped by user.")

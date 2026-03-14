@@ -1,262 +1,46 @@
 [
   {
-    "title": "1902 Guatemala earthquake",
-    "category": "General",
-    "date": "1902-01-01",
-    "description": "No description available.",
-    "imageUrl": null,
-    "wikiLink": "https://en.wikipedia.org/wiki/1902_Guatemala_earthquake",
-    "lon": -91.5167,
-    "lat": 14.8333
-  },
-  {
-    "title": "Grozny synagogue",
-    "category": "General",
-    "date": "1902-01-01",
-    "description": "The Grozny Synagogue was an Ashkenazi Orthodox Jewish synagogue located in the city of Grozny in the Chechen Republic, North Caucasus, Russia. In 1929, the synagogue was closed, later rebuilt, and repurposed for secular uses.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Grozny%2C_Synagogue_%2801%29.jpg/330px-Grozny%2C_Synagogue_%2801%29.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/Grozny_Synagogue",
-    "lon": 45.69389,
-    "lat": 43.315
-  },
-  {
-    "title": "1902 eruption of Santa Mar\u00eda",
-    "category": "General",
-    "date": "1902-01-01",
-    "description": "The 1902 eruption of Santa Mar\u00eda was one of the largest eruptions of the 20th century, measuring a six on the volcanic explosivity index. The main eruption began on 24 October 1902 and lasted no more than 20 hours. Prior to its catastrophic eruption, Santa Mar\u00eda had no record of an eruption. The eruption killed between 5,000 and 8,700 people. Immediate knowledge about the eruption was suppressed by President Manuel Estrada Cabrera due to the occurrence of a propaganda festival at around the same time of the eruption. Aid did not reach the affected areas immediately and only arrived in December.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Santa_Mar%C3%ADa_Ausbruch_1902.jpg/330px-Santa_Mar%C3%ADa_Ausbruch_1902.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/1902_eruption_of_Santa_Mar%C3%ADa",
-    "lon": -91.552,
-    "lat": 14.757
-  },
-  {
     "title": "murder of Bertha Schippan",
-    "category": "General",
+    "category": "Unrest",
     "date": "1902-01-01",
-    "description": "The murder of Johanne Elizabeth \"Bertha\" Schippan is an unsolved Australian murder. The victim, the youngest child in a large Wendish family, resided in the South Australian town of Towitta, located approximately 6\u00a0km (3.7\u00a0mi) west of Sedan. She was murdered on the night of 1 January 1902, at the age of 13. Her 24-year-old sister, Maria \u201cMary\u201d Auguste, was prosecuted for the crime but was eventually acquitted. Despite various theories, the case remains unsolved and continues to attract media attention.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/B-75311-1.jpg/330px-B-75311-1.jpg",
     "wikiLink": "https://en.wikipedia.org/wiki/Murder_of_Bertha_Schippan",
+    "hasWiki": true,
     "lon": 139.26275,
-    "lat": -34.500916666
-  },
-  {
-    "title": "1902 Copa de la Coronaci\u00f3n",
-    "category": "General",
-    "date": "1902-01-01",
-    "description": "The 1902 Copa de la Coronaci\u00f3n was a football competition in honour of the coronation of Alfonso XIII of Spain. The Royal Spanish Football Federation does not recognize it as the first season of the Copa del Rey, which began the following year.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Copa_de_la_coronacion.jpg/330px-Copa_de_la_coronacion.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/1902_Copa_de_la_Coronaci%C3%B3n",
-    "lon": -3.7033,
-    "lat": 40.4169
-  },
-  {
-    "title": "Cannon Coaster",
-    "category": "General",
-    "date": "1902-01-01",
-    "description": "Cannon Coaster, sometimes known as Leap-the-Gap, was a wooden roller coaster which operated on Bowery Street in Coney Island, Brooklyn, New York, in the first decade of the 20th century.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Cannon_Coaster_Coney_Island_1902.jpg/330px-Cannon_Coaster_Coney_Island_1902.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/Cannon_Coaster",
-    "lon": -73.98,
-    "lat": 40.575
-  },
-  {
-    "title": "Bridge No. 4",
-    "category": "General",
-    "date": "1902-01-01",
-    "description": "Bridge No. 4, near La Crosse, Wisconsin, United States, was built in 1902. It is a bowstring truss bridge built by the Clinton Bridge Company. It was listed on the National Register of Historic Places in 1980 and documented by the Historic American Engineering Record in 1987.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/McGilvray_Road_Bridge_No._4%2C_Van_Loon_Wildlife_Area%2C_La_Crosse_vicinity_%28La_Crosse_County%2C_Wisconsin%29.jpg/330px-McGilvray_Road_Bridge_No._4%2C_Van_Loon_Wildlife_Area%2C_La_Crosse_vicinity_%28La_Crosse_County%2C_Wisconsin%29.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/Bridge_No._4_(La_Crosse,_Wisconsin)",
-    "lon": -91.320556,
-    "lat": 44.023333
-  },
-  {
-    "title": "Menominee Opera House",
-    "category": "General",
-    "date": "1902-01-01",
-    "description": "Built in 1902, the Menominee Opera House resides in the Historic Waterfront District of downtown Menominee, Michigan. It was designed by well-known American architect George O. Garnsey, whose other designs include the Ogle County Courthouse in Oregon, Illinois and Queen Anne style homes such as the Ellwood House in DeKalb, Illinois.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Menominee_Opera_House_2_2020-09-06.jpg/330px-Menominee_Opera_House_2_2020-09-06.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/Menominee_Opera_House",
-    "lon": -87.6028,
-    "lat": 45.1033
-  },
-  {
-    "title": "1902 Open Championship",
-    "category": "General",
-    "date": "1902-01-01",
-    "description": "The 1902 Open Championship was the 42nd Open Championship, held 4\u20135 June at Royal Liverpool Golf Club in Hoylake, England. Sandy Herd won the Championship, a stroke ahead of runners-up James Braid and Harry Vardon.",
-    "imageUrl": null,
-    "wikiLink": "https://en.wikipedia.org/wiki/1902_Open_Championship",
-    "lon": -3.19,
-    "lat": 53.385
-  },
-  {
-    "title": "1902 U.S. Open",
-    "category": "General",
-    "date": "1902-01-01",
-    "description": "The 1902 U.S. Open was the eighth U.S. Open, held October 10\u201311 at Garden City Golf Club in Garden City, New York, on Long Island, east of New York City. Laurie Auchterlonie established a new 72-hole U.S. Open scoring record to win his only major title, six strokes ahead of Stewart Gardner and amateur Walter Travis.",
-    "imageUrl": null,
-    "wikiLink": "https://en.wikipedia.org/wiki/1902_U.S._Open_(golf)",
-    "lon": -73.6424,
-    "lat": 40.7266
-  },
-  {
-    "title": "Mount Hakk\u014dda disaster",
-    "category": "General",
-    "date": "1902-01-24",
-    "description": "The Hakk\u014dda Mountains disaster  occurred on 23 January 1902, when a group of 210 Imperial Japanese Army soldiers became lost in a blizzard in the Hakk\u014dda Mountains in Aomori Prefecture in northern Honshu, Japan, en-route to Tashiro Hot Spring located in the Hakk\u014dda Mountains. The 199 deaths during a single ascent make it the most lethal disaster in the modern history of mountain climbing.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/HakkodaStatue1.jpg/330px-HakkodaStatue1.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/Hakk%C5%8Dda_Mountains_disaster",
-    "lon": 140.87277778,
-    "lat": 40.70666667
-  },
-  {
-    "title": "Leliefontein massacre",
-    "category": "General",
-    "date": "1902-01-31",
-    "description": "The Leliefontein massacre occurred on 31 January 1902 during the South African War at the Leliefontein Methodist mission station in the Northern Cape, South Africa.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Methodist_Mission_Church%2C_Leliefontein.jpg/330px-Methodist_Mission_Church%2C_Leliefontein.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/Leliefontein_massacre",
-    "lon": 18.0836,
-    "lat": -30.3153
-  },
-  {
-    "title": "1902 Shamakhi earthquake",
-    "category": "General",
-    "date": "1902-02-13",
-    "description": "The 1902 Shamakhi earthquake occurred on 13 February with a moment magnitude of 7.4 and maximum Modified Mercalli intensity of IX (Violent). Up to 2,000 people died and thousands more were injured in the Shemakha uezd within the Baku Governorate of the Russian Empire. About 7,439 buildings were damaged or destroyed in the city and surrounding villages. Shamakhi had been devastated by earlier earthquakes in 1806, 1859 and 1872. It is one of the most destructive earthquakes in Azerbaijan.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Shemakha_1902.jpg/330px-Shemakha_1902.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/1902_Shamakhi_earthquake",
-    "lon": 48.6,
-    "lat": 40.7
+    "lat": -34.500916666,
+    "description": "The murder of Johanne Elizabeth \"Bertha\" Schippan is an unsolved Australian murder. The victim, the youngest child in a large Wendish family, resided in the South Australian town of Towitta, located approximately 6\u00a0km (3.7\u00a0mi) west of Sedan. She was murdered on the night of 1 January 1902, at the age of 13. Her 24-year-old sister, Maria \u201cMary\u201d Auguste, was prosecuted for the crime but was eventually acquitted. Despite various theories, the case remains unsolved and continues to attract media attention.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/B-75311-1.jpg/330px-B-75311-1.jpg"
   },
   {
     "title": "Battle of Tweebosch",
-    "category": "General",
+    "category": "Unrest",
     "date": "1902-03-07",
-    "description": "In the Battle of Tweebosch or De Klipdrift on 7 March 1902, a Boer commando led by Koos de la Rey defeated a British column under the command of Lieutenant General Lord Methuen during the final months of the Second Boer War.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Battle_of_Tweebosch.jpg/330px-Battle_of_Tweebosch.jpg",
     "wikiLink": "https://en.wikipedia.org/wiki/Battle_of_Tweebosch",
+    "hasWiki": true,
     "lon": 25.0,
-    "lat": -26.55
+    "lat": -26.55,
+    "description": "In the Battle of Tweebosch or De Klipdrift on 7 March 1902, a Boer commando led by Koos de la Rey defeated a British column under the command of Lieutenant General Lord Methuen during the final months of the Second Boer War.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Battle_of_Tweebosch.jpg/330px-Battle_of_Tweebosch.jpg"
   },
   {
-    "title": "Barberton rail crash",
-    "category": "General",
-    "date": "1902-03-30",
-    "description": "The Barberton rail crash was a train derailment that occurred near Barberton, South Africa in 1902.",
-    "imageUrl": null,
-    "wikiLink": "https://en.wikipedia.org/wiki/Barberton_rail_crash",
-    "lon": 31.052222,
-    "lat": -25.723333
-  },
-  {
-    "title": "1902 Ibrox disaster",
-    "category": "General",
-    "date": "1902-04-05",
-    "description": "The 1902 Ibrox disaster was the collapse of a stand at Ibrox Park in Govan, Scotland. The collapse caused the deaths of 25 supporters, and injuries to 500 more during an international association football match between Scotland and England on 5 April 1902 as part of the 1901\u201302 British Home Championship.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Disaster-ibroxi6.jpg/330px-Disaster-ibroxi6.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/1902_Ibrox_disaster",
-    "lon": -4.31031,
-    "lat": 55.8533
-  },
-  {
-    "title": "solar eclipse of April 8, 1902",
-    "category": "General",
-    "date": "1902-04-08",
-    "description": "A partial solar eclipse occurred at the Moon's descending node of orbit on Tuesday, April 8, 1902, with a magnitude of 0.0643. A solar eclipse occurs when the Moon passes between Earth and the Sun, thereby totally or partly obscuring the image of the Sun for a viewer on Earth. A partial solar eclipse occurs in the polar regions of the Earth when the center of the Moon's shadow misses the Earth.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/SE1902Apr08P.png/330px-SE1902Apr08P.png",
-    "wikiLink": "https://en.wikipedia.org/wiki/Solar_eclipse_of_April_8,_1902",
-    "lon": -142.4,
-    "lat": 71.7
+    "title": "Leliefontein massacre",
+    "category": "Unrest",
+    "date": "1902-01-31",
+    "wikiLink": "https://en.wikipedia.org/wiki/Leliefontein_massacre",
+    "hasWiki": true,
+    "lon": 18.0836,
+    "lat": -30.3153,
+    "description": "The Leliefontein massacre occurred on 31 January 1902 during the South African War at the Leliefontein Methodist mission station in the Northern Cape, South Africa.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Methodist_Mission_Church%2C_Leliefontein.jpg/330px-Methodist_Mission_Church%2C_Leliefontein.jpg"
   },
   {
     "title": "Battle of Rooiwal",
-    "category": "General",
+    "category": "Unrest",
     "date": "1902-04-11",
-    "description": "The Battle of Rooiwal was an engagement of the Second Boer War. It took place on 11 April 1902 and resulted in a victory by a British force commanded by Colonel Robert Kekewich over a Boer commando led by Generals Ferdinandus Jacobus Potgieter and Jan Kemp.",
-    "imageUrl": null,
     "wikiLink": "https://en.wikipedia.org/wiki/Battle_of_Rooiwal",
+    "hasWiki": true,
     "lon": 28.20298056,
-    "lat": -25.55147778
-  },
-  {
-    "title": "1902 eruption of Mount Pel\u00e9e",
-    "category": "General",
-    "date": "1902-04-23",
-    "description": "The 1902 eruption of Mount Pel\u00e9e was a volcanic eruption on the island of Martinique in the Lesser Antilles Volcanic Arc of the eastern Caribbean, which was one of the deadliest eruptions in recorded history. Eruptive activity began on 23 April as a series of phreatic eruptions from the summit of Mount Pel\u00e9e. Within days, the vigor of these eruptions exceeded anything witnessed since the island was settled by Europeans. The intensity then subsided for a few days until early May, when the phreatic eruptions increased again. Lightning laced the eruption clouds and trade winds dumped ash on villages to the west. Heavy ash fell, sometimes causing total darkness. Some of the afflicted residents panicked and headed for the perceived safety of larger settlements, especially Saint-Pierre, about 10\u00a0km (6.2\u00a0mi) south of Pel\u00e9e's summit. Saint-Pierre received its first ash fall on 3 May.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/The_National_geographic_magazine_%281902%29_%2814595295848%29.jpg/330px-The_National_geographic_magazine_%281902%29_%2814595295848%29.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/1902_eruption_of_Mount_Pel%C3%A9e",
-    "lon": -61.1675,
-    "lat": 14.8075
-  },
-  {
-    "title": "solar eclipse of May 7, 1902",
-    "category": "General",
-    "date": "1902-05-07",
-    "description": "A partial solar eclipse occurred at the Moon's descending node of orbit between Wednesday, May 7 and Thursday, May 8, 1902, with a magnitude of 0.8593. A solar eclipse occurs when the Moon passes between Earth and the Sun, thereby totally or partly obscuring the image of the Sun for a viewer on Earth. A partial solar eclipse occurs in the polar regions of the Earth when the center of the Moon's shadow misses the Earth.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/SE1902May07P.png/330px-SE1902May07P.png",
-    "wikiLink": "https://en.wikipedia.org/wiki/Solar_eclipse_of_May_7,_1902",
-    "lon": -125.1,
-    "lat": -70.0
-  },
-  {
-    "title": "Prima Esposizione Internazionale d'Arte Decorativa Moderna",
-    "category": "General",
-    "date": "1902-05-10",
-    "description": "No description available.",
-    "imageUrl": null,
-    "wikiLink": "https://en.wikipedia.org/wiki/Prima_Esposizione_Internazionale_d%27Arte_Decorativa_Moderna",
-    "lon": 7.68492222,
-    "lat": 45.05485
-  },
-  {
-    "title": "Fairbanks Gold Rush",
-    "category": "General",
-    "date": "1902-07-22",
-    "description": "The Fairbanks Gold Rush was a gold rush that took place in Fairbanks, Alaska, in the early 1900s. Fairbanks was a city largely built on gold rush fervor at the turn of the 20th century. Discovery and exploration continue to thrive in and around modern-day Fairbanks.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Geologic_Map_Fairbanks_District.png/330px-Geologic_Map_Fairbanks_District.png",
-    "wikiLink": "https://en.wikipedia.org/wiki/Fairbanks_Gold_Rush",
-    "lon": -147.484522222,
-    "lat": 65.007158333
-  },
-  {
-    "title": "1902 Turkestan earthquake",
-    "category": "General",
-    "date": "1902-08-22",
-    "description": "The 1902 Turkestan earthquake devastated Xinjiang, China, near the Kyrgyzstan border. It occurred on August 22, 1902, at 03:00:22 with an epicenter in the Tien Shan mountains. The thrust earthquake measured 7.7 on the moment magnitude scale (Mw\u202f) and had a depth of 18\u00a0km (11\u00a0mi).",
-    "imageUrl": null,
-    "wikiLink": "https://en.wikipedia.org/wiki/1902_Turkestan_earthquake",
-    "lon": 76.42,
-    "lat": 39.87
-  },
-  {
-    "title": "Canobie Lake Park",
-    "category": "General",
-    "date": "1902-08-23",
-    "description": "Canobie Lake Park is an amusement park in Salem, New Hampshire, United States. It was founded as a trolley park on the shore of Canobie Lake in 1902. It is one of only thirteen trolley parks left in operation. The park is owned and operated by three families.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Canobie_Lake_Park_logo.svg/330px-Canobie_Lake_Park_logo.svg.png",
-    "wikiLink": "https://en.wikipedia.org/wiki/Canobie_Lake_Park",
-    "lon": -71.2461,
-    "lat": 42.7928
-  },
-  {
-    "title": "solar eclipse of October 31, 1902",
-    "category": "General",
-    "date": "1902-10-31",
-    "description": "A partial solar eclipse occurred at the Moon's ascending node of orbit on Friday, October 31, 1902, with a magnitude of 0.696. A solar eclipse occurs when the Moon passes between Earth and the Sun, thereby totally or partly obscuring the image of the Sun for a viewer on Earth. A partial solar eclipse occurs in the polar regions of the Earth when the center of the Moon's shadow misses the Earth.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/SE1902Oct31P.png/330px-SE1902Oct31P.png",
-    "wikiLink": "https://en.wikipedia.org/wiki/Solar_eclipse_of_October_31,_1902",
-    "lon": 100.8,
-    "lat": 70.8
-  },
-  {
-    "title": "1902 Andijan earthquake",
-    "category": "General",
-    "date": "1902-12-16",
-    "description": "The 1902 Andijan earthquake occurred on December 16 with a surface-wave magnitude of 6.4 and a maximum perceived Mercalli intensity of IX (Violent). The city was leveled and over 4,000 people died. More than 40,000 homes were destroyed in the Andijan Region of Uzbekistan. This was the worst earthquake to occur in Uzbekistan in the 20th century.",
-    "imageUrl": null,
-    "wikiLink": "https://en.wikipedia.org/wiki/1902_Andijan_earthquake",
-    "lon": 72.3,
-    "lat": 40.8
+    "lat": -25.55147778,
+    "description": "The Battle of Rooiwal was an engagement of the Second Boer War. It took place on 11 April 1902 and resulted in a victory by a British force commanded by Colonel Robert Kekewich over a Boer commando led by Generals Ferdinandus Jacobus Potgieter and Jan Kemp.",
+    "imageUrl": null
   }
 ]

@@ -1,308 +1,79 @@
 [
   {
-    "title": "1903 U.S. Open",
-    "date": "1903-01-01",
-    "description": "The 1903 U.S. Open was the ninth U.S. Open, held June 26\u201329 at Baltusrol Golf Club in Springfield, New Jersey, west of New York City. Willie Anderson won the second of his four U.S. Open titles in a playoff over David Brown. The championship was played on the original course at Baltusrol, now known as the Old Course, which no longer exists.",
-    "imageUrl": null,
-    "wikiLink": "https://en.wikipedia.org/wiki/1903_U.S._Open_(golf)",
-    "lon": -74.333,
-    "lat": 40.698
-  },
-  {
-    "title": "1903 UCI Track Cycling World Championships",
-    "date": "1903-01-01",
-    "description": "The 1903 UCI Track Cycling World Championships were the World Championship for track cycling. They took place in Copenhagen, Denmark from 16 to 22 August 1903. Four events for men were contested, two for professionals and two for amateurs.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Championnat_du_monde_professionnels%2C_100_km%2C_Copenhague%2C_1903.jpg/330px-Championnat_du_monde_professionnels%2C_100_km%2C_Copenhague%2C_1903.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/1903_UCI_Track_Cycling_World_Championships",
-    "lon": 12.579722222,
-    "lat": 55.762222222
-  },
-  {
-    "title": "1903 Open Championship",
-    "date": "1903-01-01",
-    "description": "The 1903 Open Championship was the 43rd Open Championship, held 10\u201311 June at Prestwick Golf Club in Prestwick, South Ayrshire, Scotland. Harry Vardon won the Championship for the fourth time, six strokes ahead of runner-up Tom Vardon, his younger brother.",
-    "imageUrl": null,
-    "wikiLink": "https://en.wikipedia.org/wiki/1903_Open_Championship",
-    "lon": -4.619,
-    "lat": 55.502
-  },
-  {
-    "title": "1903 America's Cup",
-    "date": "1903-01-01",
-    "description": "The 1903 America's Cup was the 12th challenge for the Cup. It took place in the New York City harbor and consisted of a best of five series of races between Reliance, the fourth of Nathaniel Herreshoff's defenders for the cup, entered by the New York Yacht Club; and Shamrock III, representing the Royal Ulster Yacht Club and also the third of Sir Thomas Lipton's Cup challengers. Reliance won the first three races, defending the cup. It was the last race for the America's Cup that would take place under the Seawanhaka rule.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Reliance_%26_Shamrock_III.jpg/330px-Reliance_%26_Shamrock_III.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/1903_America%27s_Cup",
-    "lon": -74.0333,
-    "lat": 40.6667
-  },
-  {
-    "title": "Royal Marines Memorial",
-    "date": "1903-01-01",
-    "description": "The Royal Marines Memorial, also known as the Graspan Royal Marines Memorial, is an outdoor bronze sculpture by Adrian Jones, installed on the north side of The Mall in London, United Kingdom. Located next to Admiralty Arch, the 1903 memorial commemorates the Royal Marines who died in the Boxer Rebellion in China and the Second Boer War in Africa, and depicts two figures on a Portland stone plinth. It is named after the Battle of Graspan, in which the Royal Marines participated in.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Memorial_to_The_Royal_Marines.jpg/330px-Memorial_to_The_Royal_Marines.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/Royal_Marines_Memorial",
-    "lon": -0.129532,
-    "lat": 51.506538
-  },
-  {
-    "title": "Ariston Bathhouse raid",
-    "date": "1903-01-01",
-    "description": "The Ariston Bathhouse raid in 1903 was the first anti-gay police raid on an establishment in New York City. It resulted in thirty-four arrests, sixteen charges of sodomy, and twelve trials, five of which have transcripts.",
-    "imageUrl": null,
-    "wikiLink": "https://en.wikipedia.org/wiki/Ariston_Bathhouse_raid",
-    "lon": -73.981944444,
-    "lat": 40.764722222
-  },
-  {
-    "title": "1903 News of the World Match Play",
-    "date": "1903-01-01",
-    "description": "The 1903 News of the World Match Play was the first News of the World Match Play tournament. It was played from Tuesday 13 to Thursday 15 October at Sunningdale Golf Club. 32 players competed in a straight knock-out competition, with each match contested over 18 holes, except for the final which was over 36 holes. The winner received \u00a3100 out of a total prize fund of \u00a3200. James Braid defeated Ted Ray 4 & 3 in the final to win the tournament.",
-    "imageUrl": null,
-    "wikiLink": "https://en.wikipedia.org/wiki/1903_News_of_the_World_Match_Play",
-    "lon": -0.63111111,
-    "lat": 51.38805556
-  },
-  {
-    "title": "Birmingham Crematorium",
-    "date": "1903-01-01",
-    "description": "Birmingham Crematorium is a crematorium in the Perry Barr district of Birmingham, England, designed by Frank Osborne and opened in 1903. A columbarium was added in 1928. The crematorium is now owned and operated by Dignity plc.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Birmingham_Crematorium_-_Andy_Mabbett_-_21_December_2013_-_15.jpg/330px-Birmingham_Crematorium_-_Andy_Mabbett_-_21_December_2013_-_15.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/Birmingham_Crematorium",
-    "lon": -1.9088,
-    "lat": 52.52975
-  },
-  {
-    "title": "Bombardment of Fort San Carlos",
-    "date": "1903-01-17",
-    "description": "The Bombardment of Fort San Carlos occurred during the Venezuelan Crisis on January 17, 1903, when two warships of the Imperial German Navy tried to penetrate into Lake Maracaibo but were repulsed by the garrison of Fort San Carlos de la Barra after a brief exchange of fire.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Fuerte_San_Carlos_1902.jpg/330px-Fuerte_San_Carlos_1902.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/Bombardment_of_Fort_San_Carlos",
-    "lon": -71.60741,
-    "lat": 10.9862
-  },
-  {
-    "title": "Battle of Dilam",
-    "date": "1903-01-27",
-    "description": "The Battle of Dilam was a major battle of the 1903\u20131907 Saudi\u2013Rashidi War, during the Unification of Saudi Arabia campaign, between the Rashidi dynasty and Saudi rebels. It occurred on 27 January 1903, in the town of Dilam south of Riyadh, the capital of the present day Saudi Arabia.",
-    "imageUrl": null,
-    "wikiLink": "https://en.wikipedia.org/wiki/Battle_of_Dilam",
-    "lon": 47.150556,
-    "lat": 23.9825
-  },
-  {
-    "title": "Esmond Train Wreck",
-    "date": "1903-01-28",
-    "description": "The Esmond train wreck on January 28, 1903, 3:30\u00a0am, about 9 miles (14\u00a0km) east of present-day Tucson, Arizona, killed 14 people, including the engineers of both trains. The accident occurred when the eastbound Crescent City Express collided head-on with the westbound Pacific Coast Express. Both trains were running late. A communication error was determined to be the cause of the wreck. A night operator named Clough admitted that he did not deliver a second order to Conductor Parker which instructed him to pull the Crescent City Express, headed for New Orleans, on to the Esmond siding to allow the Pacific Coast Express, headed for San Francisco, to pass by.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Esmond_train_wreck_Pullman_car.jpg/330px-Esmond_train_wreck_Pullman_car.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/Esmond_train_wreck",
-    "lon": -110.774,
-    "lat": 32.1031
-  },
-  {
-    "title": "Brunswick and Topsham Water District",
-    "date": "1903-02-24",
-    "description": "Established in 1903, the Brunswick and Topsham Water District is a fresh water supply district providing fresh water to the towns of Brunswick and Topsham, Maine through groundwater sources. The Water District is a collaboration between the two towns to ensure safe drinking water as well as water supply for the use of fire suppression systems.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Brunswick_and_Topsham_Water_District.jpg/330px-Brunswick_and_Topsham_Water_District.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/Brunswick_and_Topsham_Water_District_(Maine)",
-    "lon": -70.0038,
-    "lat": 43.9399
-  },
-  {
     "title": "Battle of Sokoto",
+    "category": "Unrest",
     "date": "1903-03-15",
-    "description": "The Battle of Sokoto was fought on 15 March 1903 between the British Northern Nigeria Protectorate and the Sokoto Caliphate in present-day northern Nigeria. In the face of British aggression, the Caliphate's leaders were divided over whether to respond with force, pursue martyrdom, or make a mass hijra to avoid Christian rule. After the British captured Sokoto, they installed a puppet sultan with reduced powers under the Protectorate, while the fugitive Caliph Attahiru I was pursued and killed at the Battle of Burmi in July 1903, marking the formal end of the century-long Caliphate and the beginning of colonial rule over Northern Nigeria.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aftermath_of_the_Battle_of_Burmi_%281903%29.jpg/330px-Aftermath_of_the_Battle_of_Burmi_%281903%29.jpg",
     "wikiLink": "https://en.wikipedia.org/wiki/Battle_of_Sokoto",
+    "hasWiki": true,
     "lon": 5.233888888,
-    "lat": 13.062222222
-  },
-  {
-    "title": "solar eclipse of March 29, 1903",
-    "date": "1903-03-29",
-    "description": "An annular solar eclipse occurred at the Moon's descending node of orbit between Saturday, March 28 and Sunday, March 29, 1903, with a magnitude of 0.9767. A solar eclipse occurs when the Moon passes between Earth and the Sun, thereby totally or partly obscuring the image of the Sun for a viewer on Earth. An annular solar eclipse occurs when the Moon's apparent diameter is smaller than the Sun's, blocking most of the Sun's light and causing the Sun to look like an annulus (ring). An annular eclipse appears as a partial eclipse over a region of the Earth thousands of kilometres wide. The Moon's apparent diameter was near the average diameter because it occurred 6.7 days after apogee and 7.8 days before perigee.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/SE1903Mar29A.png/330px-SE1903Mar29A.png",
-    "wikiLink": "https://en.wikipedia.org/wiki/Solar_eclipse_of_March_29,_1903",
-    "lon": 130.3,
-    "lat": 56.2
-  },
-  {
-    "title": "Kishinev pogrom",
-    "date": "1903-04-19",
-    "description": "The Kishinev pogrom or Kishinev massacre was an anti-Jewish riot that took place in Kishinev, then the capital of the Bessarabia Governorate in the Russian Empire, on 19\u201321 April\u00a0[O.S. 6\u20138 April]\u00a01903. During the pogrom, which began on Easter Day, between 40 and 49 Jews were killed, 92 were gravely injured, over 500 were lightly injured and 1,500 homes were damaged. American Jews began large-scale organized financial help, and assisted in emigration. The incident focused worldwide attention on the persecution of Jews within the Russian Empire, and led Theodor Herzl to propose the Uganda Scheme as a temporary refuge for the Jews. A second pogrom erupted in the city in October 1905.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Pogrom_de_Chisinau_-_1903_-_2.jpg/330px-Pogrom_de_Chisinau_-_1903_-_2.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/Kishinev_pogrom",
-    "lon": 28.8045,
-    "lat": 47.037611111
-  },
-  {
-    "title": "Malazgirt earthquake of 1903",
-    "date": "1903-04-29",
-    "description": "The 1903 Manzikert earthquake struck Manzikert of nowadays Mu\u015f Province in eastern Turkey on 28 April. Registering a surface-wave magnitude of 7.0, the earthquake originated from a highly active seismic zone. It killed 3,500 people and 20,000 animals, destroyed 12,000 homes, and is now listed among Turkey's deadliest earthquakes in recorded history. To this day, Turkey is threatened by major earthquakes \u2013 more than 100 earthquakes over 7.0 have taken place in the country's known history.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Ruines_de_M%C3%A9lazqerd_apr%C3%A8s_le_tremblement_de_terre_du_30_avril_1903.jpg/330px-Ruines_de_M%C3%A9lazqerd_apr%C3%A8s_le_tremblement_de_terre_du_30_avril_1903.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/1903_Manzikert_earthquake",
-    "lon": 42.5,
-    "lat": 39.1
-  },
-  {
-    "title": "Evansville race riot",
-    "date": "1903-07-01",
-    "description": "The Evansville Race Riot occurred in July 1903 in Evansville, Indiana and was the worst riot in the city's history. The riots occurred after a black man shot and killed a white policeman and ultimately resulted in 12 deaths.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Former_Vanderburgh_County_Sheriff%27s_Residence.jpg/330px-Former_Vanderburgh_County_Sheriff%27s_Residence.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/Evansville_race_riot",
-    "lon": -87.573,
-    "lat": 37.973444444
-  },
-  {
-    "title": "Glasgow St Enoch rail accident",
-    "date": "1903-07-27",
-    "description": "The Glasgow St Enoch rail accident occurred on 27 July 1903. A train arriving at the St Enoch terminal station failed to stop in time and collided heavily with the buffer stop, sustaining severe damage. Thirteen people were killed instantaneously and a further three died at a later time owing to injuries received. 64 people were injured, of which 17 required hospital treatment. This was the worst buffer stop collision on British main line railways, though exceeded by the Moorgate tragedy on the London Underground.",
-    "imageUrl": null,
-    "wikiLink": "https://en.wikipedia.org/wiki/Glasgow_St_Enoch_rail_accident",
-    "lon": -4.25218,
-    "lat": 55.85686
-  },
-  {
-    "title": "United States Cartridge Company explosion",
-    "date": "1903-07-29",
-    "description": "The United States Cartridge Company explosion occurred on July 29, 1903, in present-day Lowell, Massachusetts. The explosion of two buildings used to store dynamite and gunpowder killed 22 people and destroyed 13 homes.",
-    "imageUrl": null,
-    "wikiLink": "https://en.wikipedia.org/wiki/United_States_Cartridge_Company_explosion",
-    "lon": -71.295555555,
-    "lat": 42.621388888
-  },
-  {
-    "title": "1903 conclave",
-    "date": "1903-07-31",
-    "description": "A conclave was held from 31 July to 4 August 1903 to elect a new pope to succeed Leo XIII, who had died on 20 July. Of the 64 eligible cardinal electors, all but two attended. On the seventh ballot, the conclave elected Cardinal Giuseppe Sarto, the patriarch of Venice. After accepting his election, he took the name Pius X.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Pius_X%2C_by_Francesco_De_Federicis%2C_1903_%28cropped%29.jpg/330px-Pius_X%2C_by_Francesco_De_Federicis%2C_1903_%28cropped%29.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/1903_conclave",
-    "lon": 12.45444444,
-    "lat": 41.90305556
-  },
-  {
-    "title": "Paris M\u00e9tro train fire",
-    "date": "1903-08-10",
-    "description": "The disastrous Paris M\u00e9tro train fire occurred on the evening of 10 August 1903, on what was then Line 2 Nord of the system and is now Paris M\u00e9tro Line 2. There were 84 deaths, most at Couronnes station, so it is also known as the Couronnes Disaster.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Paris_-_Catastrophe_du_Metropolitain_station_Couronnes.jpg/330px-Paris_-_Catastrophe_du_Metropolitain_station_Couronnes.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/Paris_M%C3%A9tro_train_fire",
-    "lon": 2.380155,
-    "lat": 48.869274
-  },
-  {
-    "title": "Battle of Sliva",
-    "date": "1903-08-12",
-    "description": "The Battle of Sliva occurred in an area known as Sliva in the city of Kru\u0161evo, in Ottoman Macedonia (now North Macedonia on August\u00a012, 1903. It was an important episode of Ilinden\u2013Preobrazhenie Uprising which occurred 10 days after the Kru\u0161evo Republic was proclaimed back on August\u00a02, 1903, and eventually lead to the fall of the Republic and to the suppression of the uprising.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Sliva_Monument%2C_Krusevo.jpg/330px-Sliva_Monument%2C_Krusevo.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/Battle_of_Sliva",
-    "lon": 21.226388888,
-    "lat": 41.388055555
+    "lat": 13.062222222,
+    "description": "The Battle of Sokoto was fought on 15 March 1903 between the British Northern Nigeria Protectorate and the Sokoto Caliphate in present-day northern Nigeria. In the face of British aggression, the Caliphate's leaders were divided over whether to respond with force, pursue martyrdom, or make a mass hijra to avoid Christian rule. After the British captured Sokoto, they installed a puppet sultan with reduced powers under the Protectorate, while the fugitive Caliph Attahiru I was pursued and killed at the Battle of Burmi in July 1903, marking the formal end of the century-long Caliphate and the beginning of colonial rule over Northern Nigeria.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aftermath_of_the_Battle_of_Burmi_%281903%29.jpg/330px-Aftermath_of_the_Battle_of_Burmi_%281903%29.jpg"
   },
   {
     "title": "Battle of Me\u010dkin Kamen",
+    "category": "Unrest",
     "date": "1903-08-12",
-    "description": "The Battle of Me\u010dkin Kamen also known as 'Battle of Mechkin Kamen' occurred on the hill now known as Me\u010dkin Kamen, a few kilometres south from the town of Kru\u0161evo on 12 August 1903. It was part of the Ilinden-Preobrazhenie Uprising, led by the Internal Macedonian-Adrianople Revolutionary Organisation against the Ottoman Empire. The leading revolutionary commanders of the local Kru\u0161evo Republic were Nikola Karev and Pitu Guli. The battle is an important event that is celebrated in Bulgaria and North Macedonia.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/M_KAMEN.jpg/250px-M_KAMEN.jpg",
     "wikiLink": "https://en.wikipedia.org/wiki/Battle_of_Me%C4%8Dkin_Kamen",
+    "hasWiki": true,
     "lon": 21.23333333,
-    "lat": 41.36666667
+    "lat": 41.36666667,
+    "description": "The Battle of Me\u010dkin Kamen also known as 'Battle of Mechkin Kamen' occurred on the hill now known as Me\u010dkin Kamen, a few kilometres south from the town of Kru\u0161evo on 12 August 1903. It was part of the Ilinden-Preobrazhenie Uprising, led by the Internal Macedonian-Adrianople Revolutionary Organisation against the Ottoman Empire. The leading revolutionary commanders of the local Kru\u0161evo Republic were Nikola Karev and Pitu Guli. The battle is an important event that is celebrated in Bulgaria and North Macedonia.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/M_KAMEN.jpg/250px-M_KAMEN.jpg"
+  },
+  {
+    "title": "Battle of Sliva",
+    "category": "Unrest",
+    "date": "1903-08-12",
+    "wikiLink": "https://en.wikipedia.org/wiki/Battle_of_Sliva",
+    "hasWiki": true,
+    "lon": 21.226388888,
+    "lat": 41.388055555,
+    "description": "The Battle of Sliva occurred in an area known as Sliva in the city of Kru\u0161evo, in Ottoman Macedonia (now North Macedonia on August\u00a012, 1903. It was an important episode of Ilinden\u2013Preobrazhenie Uprising which occurred 10 days after the Kru\u0161evo Republic was proclaimed back on August\u00a02, 1903, and eventually lead to the fall of the Republic and to the suppression of the uprising.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Sliva_Monument%2C_Krusevo.jpg/330px-Sliva_Monument%2C_Krusevo.jpg"
   },
   {
     "title": "Battle of Taghit",
+    "category": "Unrest",
     "date": "1903-08-20",
-    "description": "The Battle of Taghit was the siege of a fort held by a contingent of the French Army of Africa against Moroccan tribesmen during the South-Oranese Campaign.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Monument_of_the_battle_of_Taghit_%28L%27Illustration%2C_1904%29.jpg/330px-Monument_of_the_battle_of_Taghit_%28L%27Illustration%2C_1904%29.jpg",
     "wikiLink": "https://en.wikipedia.org/wiki/Battle_of_Taghit",
+    "hasWiki": true,
     "lon": 4.05,
-    "lat": 35.433333
+    "lat": 35.433333,
+    "description": "The Battle of Taghit was the siege of a fort held by a contingent of the French Army of Africa against Moroccan tribesmen during the South-Oranese Campaign.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Monument_of_the_battle_of_Taghit_%28L%27Illustration%2C_1904%29.jpg/330px-Monument_of_the_battle_of_Taghit_%28L%27Illustration%2C_1904%29.jpg"
+  },
+  {
+    "title": "Bombardment of Fort San Carlos",
+    "category": "Unrest",
+    "date": "1903-01-17",
+    "wikiLink": "https://en.wikipedia.org/wiki/Bombardment_of_Fort_San_Carlos",
+    "hasWiki": true,
+    "lon": -71.60741,
+    "lat": 10.9862,
+    "description": "The Bombardment of Fort San Carlos occurred during the Venezuelan Crisis on January 17, 1903, when two warships of the Imperial German Navy tried to penetrate into Lake Maracaibo but were repulsed by the garrison of Fort San Carlos de la Barra after a brief exchange of fire.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Fuerte_San_Carlos_1902.jpg/330px-Fuerte_San_Carlos_1902.jpg"
   },
   {
     "title": "Battle of El-Moungar",
+    "category": "Unrest",
     "date": "1903-09-02",
-    "description": "The Battle of El-Moungar was fought during the South-Oranese Campaign between a contingent of the French Army of Africa, mainly from the French Foreign Legion, and Moroccan tribesmen.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bonifacio_L%C3%A9gion_JPG1.jpg/330px-Bonifacio_L%C3%A9gion_JPG1.jpg",
     "wikiLink": "https://en.wikipedia.org/wiki/Battle_of_El-Moungar",
+    "hasWiki": true,
     "lon": 4.05,
-    "lat": 35.433333
+    "lat": 35.433333,
+    "description": "The Battle of El-Moungar was fought during the South-Oranese Campaign between a contingent of the French Army of Africa, mainly from the French Foreign Legion, and Moroccan tribesmen.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bonifacio_L%C3%A9gion_JPG1.jpg/330px-Bonifacio_L%C3%A9gion_JPG1.jpg"
   },
   {
-    "title": "solar eclipse of September 21, 1903",
-    "date": "1903-09-21",
-    "description": "A total solar eclipse occurred at the Moon's ascending node of orbit on Monday, September 21, 1903, with a magnitude of 1.0316. A solar eclipse occurs when the Moon passes between Earth and the Sun, thereby totally or partly obscuring the image of the Sun for a viewer on Earth. A total solar eclipse occurs when the Moon's apparent diameter is larger than the Sun's, blocking all direct sunlight, turning day into darkness. Totality occurs in a narrow path across Earth's surface, with the partial solar eclipse visible over a surrounding region thousands of kilometres wide. Occurring about 2.1 days after perigee, the Moon's apparent diameter was larger.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/SE1903Sep21T.png/330px-SE1903Sep21T.png",
-    "wikiLink": "https://en.wikipedia.org/wiki/Solar_eclipse_of_September_21,_1903",
-    "lon": 77.2,
-    "lat": -58.0
-  },
-  {
-    "title": "Wreck of the Old 97",
-    "date": "1903-09-27",
-    "description": "The Wreck of the Old 97 was an American rail disaster involving the Southern Railway mail train, officially known as the Fast Mail, while en route from Monroe, Virginia, to Spencer, North Carolina, on September\u00a027, 1903. Travelling at an excessive speed in an attempt to maintain schedule, the train derailed at the Stillhouse Trestle near Danville, Virginia, where it careened off the side of the bridge, killing 11 on-board personnel and injuring seven others. The wreck inspired a famous railroad ballad, which was the focus of a copyright lawsuit and became seminal in the genre of country music.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Old_97_wreck_at_Stillhouse_Trestle_in_Virginia_-_1903_%282%29.jpg/330px-Old_97_wreck_at_Stillhouse_Trestle_in_Virginia_-_1903_%282%29.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/Wreck_of_the_Old_97",
-    "lon": -79.3925,
-    "lat": 36.5956
-  },
-  {
-    "title": "Purdue Wreck",
-    "date": "1903-10-31",
-    "description": "The Purdue wreck was a railroad train collision in Indianapolis, Indiana, on Saturday, October 31, 1903, between two special trains that killed 17 people, including 14 players of the 1903 Purdue University football team. Team captain and future Indiana governor Harry G. Leslie was initially thought to have died in the accident, but was later revived.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Purdue_Wreck.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/Purdue_wreck",
-    "lon": -86.167,
-    "lat": 39.792
-  },
-  {
-    "title": "British expedition to Tibet",
-    "date": "1903-12-01",
-    "description": "The British expedition to Tibet, also known as the Younghusband expedition, began in December 1903 and lasted until September 1904. The expedition was effectively a temporary invasion by British Indian Armed Forces under the auspices of the Tibet Frontier Commission, whose purported mission was to establish diplomatic relations and resolve the dispute over the border between Tibet and Sikkim. In the nineteenth century, the British had conquered Burma and Sikkim, with the whole southern flank of Tibet coming under the control of the British Indian Empire. Tibet was ruled by the 13th Dalai Lama under the Ganden Phodrang government as a Himalayan state nominally under the protectorate of the Chinese Qing dynasty until the 1911 Revolution, after which a period of de facto Tibetan independence (1912\u20131951) followed.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Meeting_with_tibetans.jpg/330px-Meeting_with_tibetans.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/British_expedition_to_Tibet",
-    "lon": 89.27694444,
-    "lat": 26.08888889
-  },
-  {
-    "title": "Panama Canal Zone",
-    "date": "1903-12-02",
-    "description": "The Panama Canal Zone, also known as just the Canal Zone, was a concession of the United States located in the Isthmus of Panama that existed from 1903 to 1979. It consisted of the Panama Canal and an area generally extending five miles (8\u00a0km) on each side of the centerline but excluding Panama City and Col\u00f3n. Its capital was Balboa.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flag_of_Panama_Canal_Zone.svg/330px-Flag_of_Panama_Canal_Zone.svg.png",
-    "wikiLink": "https://en.wikipedia.org/wiki/Panama_Canal_Zone",
-    "lon": -79.720166666,
-    "lat": 9.117669444
-  },
-  {
-    "title": "Theodore Roosevelt's Third State of the Union Address",
-    "date": "1903-12-07",
-    "description": "The 1903 State of the Union Address was submitted on Monday, December 7, 1903, by the 26th president of the United States, Theodore Roosevelt, to both houses of the 58th United States Congress.",
-    "imageUrl": null,
-    "wikiLink": "https://en.wikipedia.org/wiki/1903_State_of_the_Union_Address",
-    "lon": -77.008888888,
-    "lat": 38.889722222
-  },
-  {
-    "title": "Connellsville train wreck",
-    "date": "1903-12-23",
-    "description": "The Connellsville train wreck was a rail accident that occurred on December 23, 1903, on the Baltimore and Ohio Railroad near Connellsville, Pennsylvania. The Duquesne Limited, a passenger train, derailed when it struck a load of timber lying on the tracks. The timber had fallen from a freight train minutes before the collision. The crash resulted in 64 deaths and 68 injuries.",
-    "imageUrl": null,
-    "wikiLink": "https://en.wikipedia.org/wiki/Connellsville_train_wreck",
-    "lon": -79.695511,
-    "lat": 40.052322
-  },
-  {
-    "title": "1903 East Paris train wreck",
-    "date": "1903-12-26",
-    "description": "The East Paris train wreck was a head-on collision between two trains, which occurred on the Pere Marquette Railway on December 26, 1903. The crash was caused after a westbound stop signal was blown out by strong winds, causing the westbound train to fail to stop, and collide with an eastbound train.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/1903_East_Paris_Train_Wreck_-_Aftermath.jpg/330px-1903_East_Paris_Train_Wreck_-_Aftermath.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/1903_East_Paris_train_wreck",
-    "lon": -85.5813,
-    "lat": 42.9054
-  },
-  {
-    "title": "Iroquois Theatre fire",
-    "date": "1903-12-30",
-    "description": "The Iroquois Theatre fire was a catastrophic building fire in Chicago, Illinois, that broke out on December 30, 1903, during a performance attended by 1,700 people. The fire caused 602 deaths and 250 non-fatal injuries. It ranks as the worst theater fire in the United States, surpassing the carnage of the Brooklyn Theatre fire of 1876, which claimed at least 278 lives.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/IroquoisTheater.jpg/330px-IroquoisTheater.jpg",
-    "wikiLink": "https://en.wikipedia.org/wiki/Iroquois_Theatre_fire",
-    "lon": -87.628611111,
-    "lat": 41.884722222
+    "title": "Battle of Dilam",
+    "category": "Unrest",
+    "date": "1903-01-27",
+    "wikiLink": "https://en.wikipedia.org/wiki/Battle_of_Dilam",
+    "hasWiki": true,
+    "lon": 47.150556,
+    "lat": 23.9825,
+    "description": "The Battle of Dilam was a major battle of the 1903\u20131907 Saudi\u2013Rashidi War, during the Unification of Saudi Arabia campaign, between the Rashidi dynasty and Saudi rebels. It occurred on 27 January 1903, in the town of Dilam south of Riyadh, the capital of the present day Saudi Arabia.",
+    "imageUrl": null
   }
 ]

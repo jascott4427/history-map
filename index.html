@@ -5,26 +5,33 @@
     <meta charset="utf-8">
     <script src="https://cdn.jsdelivr.net/npm/cesium@1.114.0/Build/Cesium/Cesium.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/cesium@1.114.0/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+
     <style>
+        /* 1. GLOBAL RESET */
         body {
             margin: 0;
             padding: 0;
             overflow: hidden;
+            /* Prevents the main page from scrolling; only the sidebar should scroll */
         }
 
+        /* 2. CESIUM CONTAINER: Must be absolute or full-viewport to render correctly */
         #cesiumContainer {
             width: 100vw;
             height: 100vh;
         }
 
+        /* 3. FLOATING TOOLBAR: Positioned over the globe on the top left */
         #toolbar {
             position: absolute;
             top: 10px;
             left: 10px;
             z-index: 10;
+            /* Ensures it sits above the Cesium canvas */
             background: rgba(42, 42, 42, 0.8);
             padding: 10px;
             border-radius: 4px;
+            color: white;
         }
 
         button {
@@ -33,16 +40,112 @@
             margin-bottom: 5px;
             width: 100%;
         }
+
+        /* 4. HISTORY SIDEBAR: The "Drawer" that slides out from the right */
+        .history-sidebar {
+            display: none;
+            /* Hidden by default; toggled via JavaScript */
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 350px;
+            height: 100vh;
+            /* Takes full height of the browser window */
+            background: #f4f4f4;
+            z-index: 2000;
+            /* High z-index to stay above the toolbar and globe */
+            box-shadow: -10px 0 30px rgba(0, 0, 0, 0.3);
+            font-family: sans-serif;
+        }
+
+        /* Fixed header inside the sidebar so it doesn't disappear when scrolling */
+        .sidebar-header {
+            padding: 20px;
+            background: #222;
+            color: white;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        #eventSearch {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: none;
+            box-sizing: border-box;
+            /* Crucial: ensures padding doesn't push the search bar off-screen */
+        }
+
+        /* 5. SCROLL CONTAINER: The area where the 600+ events live */
+        .scroll-container {
+            height: calc(100vh - 120px);
+            /* Subtracts the header height so the container fits perfectly */
+            overflow-y: auto;
+            /* Enables vertical scrolling for long lists of events */
+            padding: 10px;
+        }
+
+        /* 6. EVENT CARDS: Styling for individual historical events */
+        .event-card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            border-left: 5px solid #ccc;
+            /* Default gray indicator */
+            color: #333;
+        }
+
+        /* Dynamic Category Indicators based on data from Python scraper */
+        .card-Conflict {
+            border-left-color: #e74c3c;
+        }
+
+        /* Red */
+        .card-Politics {
+            border-left-color: #8e44ad;
+        }
+
+        /* Purple */
+        .card-Science {
+            border-left-color: #2980b9;
+        }
+
+        /* Blue */
     </style>
 </head>
 
 <body>
+    <!-- Menu to control the year -->
     <div id="toolbar">
         <input type="number" id="yearInput" value="1805" style="width: 60px;">
         <button onclick="loadHistoryYear(document.getElementById('yearInput').value)">Load Year</button>
         <button onclick="viewer.entities.removeAll()">Clear Map</button>
     </div>
+
+    <!-- Sidebar for multiple events at one point -->
+    <div id="eventSidebar" class="history-sidebar">
+        <div class="sidebar-header">
+            <div class="header-top">
+                <h2>Events Without Coordinates</h2>
+                <button onclick="document.getElementById('eventSidebar').style.display='none'">×</button>
+            </div>
+            <input type="text" id="eventSearch" placeholder="Search events (e.g. 'war', 'election')..."
+                onkeyup="filterEvents()">
+        </div>
+        <div id="sidebarContent" class="scroll-container">
+        </div>
+    </div>
+
+    <!-- Cesium Setup -->
     <div id="cesiumContainer"></div>
+
+    <!-- Launch Main State Machine -->
     <script src="globe.js"></script>
 </body>
 
