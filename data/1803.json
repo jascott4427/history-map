@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Battle of Laswari",
+    "date": "1803-11-01T00:00:00Z",
+    "description": "1803 battle",
+    "wikiLink": "https://en.wikipedia.org/wiki/Battle_of_Laswari",
+    "lon": 76.93333333,
+    "lat": 27.55
+  },
+  {
+    "title": "Battle of Delhi",
+    "date": "1803-09-11T00:00:00Z",
+    "description": "1803 battle of the Second Anglo-Maratha War",
+    "wikiLink": "https://en.wikipedia.org/wiki/Battle_of_Delhi_(1803)",
+    "lon": 77.246277777,
+    "lat": 28.601833333
+  },
+  {
+    "title": "Battle of Assaye",
+    "date": "1803-09-23T00:00:00Z",
+    "description": "1803 battle of the Second Anglo-Maratha War",
+    "wikiLink": "https://en.wikipedia.org/wiki/Battle_of_Assaye",
+    "lon": 75.8875,
+    "lat": 20.235
+  },
+  {
+    "title": "Siege of Port-au-Prince",
+    "date": "1803-10-01T00:00:00Z",
+    "description": "1803 siege",
+    "wikiLink": "https://en.wikipedia.org/wiki/Siege_of_Port-au-Prince_(1803)",
+    "lon": -72.338611111,
+    "lat": 18.5425
+  },
+  {
+    "title": "Battle of Verti\u00e8res",
+    "date": "1803-11-18T00:00:00Z",
+    "description": "1803 major battle of the Second War of Haitian Independence",
+    "wikiLink": "https://en.wikipedia.org/wiki/Battle_of_Verti%C3%A8res",
+    "lon": -72.2244,
+    "lat": 19.7333
+  },
+  {
+    "title": "Siege of Aligarh",
+    "date": "1803-09-01T00:00:00Z",
+    "description": "battle between the Maratha Confederacy and the British East India Company during the Second Anglo-Maratha War (1803\u20131805) at Aligarh, India",
+    "wikiLink": "https://en.wikipedia.org/wiki/Siege_of_Aligarh",
+    "lon": 78.08,
+    "lat": 27.88
+  },
+  {
+    "title": "Siege of Ahmednagar",
+    "date": "1803-08-08T00:00:00Z",
+    "description": "1803 first battle of the Second Anglo-Maratha War",
+    "wikiLink": "https://en.wikipedia.org/wiki/Siege_of_Ahmednagar",
+    "lon": 74.755,
+    "lat": 19.095
+  },
+  {
+    "title": "Battle of Argaon",
+    "date": "1803-11-29T00:00:00Z",
+    "description": "1803 battle",
+    "wikiLink": "https://en.wikipedia.org/wiki/Battle_of_Argaon",
+    "lon": 73.64553,
+    "lat": 16.778999
+  }
+]
