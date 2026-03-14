@@ -51,7 +51,7 @@ async def fetch_wikipedia_summaries(session, events):
     Orchestrates asynchronous fetching and manages the progress line end.
     """
     stats = {'done': 0, 'failed': 0}
-    semaphore = asyncio.Semaphore(25) 
+    semaphore = asyncio.Semaphore(10) 
     
     # Filter only events that need a Wiki fetch
     wiki_events = [e for e in events if e.get('hasWiki')]
@@ -153,12 +153,20 @@ async def fetch_year(session, year):
     
     events_to_process = []
     invalid_coords = 0
+    unique_events = {}
     for res in raw_results:
         try:
+            # Use the Wikidata Q-code (the 'item' URL) as the unique key
+            item_id = res['item']['value']
+            
+            # If we already processed this exact event, skip it
+            if item_id in unique_events:
+                continue
+
             raw_coords = res['coords']['value'].replace("Point(", "").replace(")", "").split(" ")
             wiki_link = res.get('article', {}).get('value', None)
             
-            events_to_process.append({
+            unique_events[item_id] = {
                 "title": res['itemLabel']['value'],
                 "category": res.get('categoryLabel', {'value': 'General'})['value'],
                 "date": res['eventDate']['value'].split('T')[0],
@@ -166,7 +174,7 @@ async def fetch_year(session, year):
                 "hasWiki": True if wiki_link else False,
                 "lon": float(raw_coords[0]),
                 "lat": float(raw_coords[1])
-            })
+            }
         except Exception:
             invalid_coords += 1
             continue
@@ -174,6 +182,7 @@ async def fetch_year(session, year):
     print(f"    → Valid coordinates: {len(events_to_process)} | Invalid: {invalid_coords}")
     print("Syncing summaries from Wikipedia API...")
     
+    events_to_process = list(unique_events.values())
     final_results = await fetch_wikipedia_summaries(session, events_to_process)
 
     file_path = f'{DATA_DIRECTORY}/{year}.json'
